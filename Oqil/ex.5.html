@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<style>
+    .array div{
+        font-size: 25px;
+        font-weight: 500;
+        background-color: aqua;
+        margin-bottom: 11px;
+        width: max-content;
+    }
+</style>
+<body>
+    <div class="array">
+        <h1>5. Write a simple JavaScript program to join all elements of the following array into a string</h1>
+        <p>Sample array : myColor = ["Red", "Green", "White", "Black"];</p>
+        <div class="res1"></div>
+        <div class="res2"></div>
+        <div class="res3"></div>
+
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            var text1 = document.querySelector('.res1');
+            var text2 = document.querySelector('.res2');
+            var text3 = document.querySelector('.res3');
+
+            var myColor = ["Red", "Green", "White", "Black"];
+
+            var add = myColor.toString();
+            var plus1 = myColor.join();
+            var plus2 = myColor.join('+');
+            
+            text1.innerHTML = add;
+            text2.innerHTML = plus1;
+            text3.innerHTML = plus2;
+
+            console.log(myColor.toString());
+        })
+
+    </script>
+</body>
+
+</html>
