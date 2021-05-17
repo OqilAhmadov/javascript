@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+</head>
+<body>
+    <h2>Exercise 9</h2>
+    <p>Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19</p>
+
+    <script>
+
+        function diff_num(n) {
+            if ( n <= 19) {
+                return (19 - n);
+            }
+            else {
+                return (n - 19) * 3;
+            }
+        }
+
+        console.log(diff_num(12));
+        console.log(diff_num(19));
+        console.log(diff_num(22));
+    </script>
+</body>
+</html>

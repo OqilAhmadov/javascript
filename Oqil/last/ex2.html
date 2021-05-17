@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+<style>
+    body{
+        background-color: palegreen;
+    }
+    h2{
+        font-size: 42px;
+        font-family:  sans-serif;
+        font-weight: 800;
+        color: blue;
+        text-align: center;
+    }
+    p{
+        font-size: 22px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+        width: 800px;
+        background-color: green;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    h4{
+        font-size: 22px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        color: white;
+        width: 200px;
+        background-color: green;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 40px auto;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h2>Exercise 2</h2>
+    <p>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"</p>
+    <h4>First Open the Console</h4>
+    <script>
+        const num = Math.ceil(Math.random() * 10);
+        console.log(num);
+        const gnum = prompt('Guess the number between 1 and 10 inclusive');
+        if (gnum == num)
+            alert('Matched. Good work');
+            // console.log("matched")
+            else
+            // console.log('Not matched')
+            alert('Not matched, the number was '+gnum);
+    </script>
+</body>
+</html>

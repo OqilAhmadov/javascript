@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h2>Exercise 1</h2>
+     <p>Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one.</p>
+    <button onclick="CheckValue()">Check it</button>
+    <p id="demo"></p>
+    <script>
+        var user = {
+            name: Qosim,
+            job: "developer",
+            age: 33,
+            height: 175
+        };
+        var user2 = {
+            name: Jasur,
+            job: Designer,
+            age: 33,
+            height: 175
+        };
+
+        function checkValue() {
+         return( user.every(user2));
+        }
+        console.log(checkValue);
+        document.getElementById("demo").innerHTML = checkValue();
+    </script>
+</body>
+</html>
