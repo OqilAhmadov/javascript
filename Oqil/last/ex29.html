@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Exercise 29</h2>
+    <img src="../image/javascript-basic-image-exercise-46.png" alt="">
+    <p>Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11.</p>
+    <h4>To see result Open the Console</h4>
+    <div class="images">
+        <img src="./Screenshot_2.png" alt="PNG">
+    </div>
+    <script>
+       function valCheck (a, b ) {
+        if (!((a % 7 == 0 || a % 11 == 0) && (b % 7 == 0 || b % 11 == 0 ))) {
+            return ((a % 7 == 0 || a % 11 == 0) || (b % 7 == 0 || b % 11 == 0 ))
+        }
+        else
+        return false;
+       }
+
+       console.log(valCheck(14, 21));
+       console.log(valCheck(14, 20));
+       console.log(valCheck(16, 20));
+    </script>
+</body>
+
+</html>

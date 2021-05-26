@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Exercise 28</h2>
+    <img src="../image/javascript-basic-image-exercise-45.png" alt="">
+    <p>Write a "JavaScript" program to check two given integer values and return true if one of the number is 15 or if
+        their sum or difference is 15.</p>
+    <h4>To see result Open the Console</h4>
+    <div class="images">
+        <img src="./Screenshot_2.png" alt="PNG">
+    </div>
+    <script>
+       
+            function test_number(x, y) {
+                return ( x === 15 || y === 15 || x + y === 15 || Math.abs(x - y) === 15);
+            }
+
+        console.log(test_number(15, 9));
+    </script>
+</body>
+
+</html>
