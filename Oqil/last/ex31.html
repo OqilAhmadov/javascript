@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 31</h2>
+        <img src="../image/javascript-basic-image-exercise-49.png" alt="">
+        <p>Write a JavaScript program to replace every character in a given string with the character following it in
+            the alphabet.</p>
+
+        <button onclick="string_reverse()">Check it</button>
+        <span id="demo"></span>
+        <h4>To see result Open the Console</h4>
+
+    </div>
+    <script>
+
+        function LetterChanges(text) {
+            var s = text.split('');
+            for (var i = 0; i < s.length; i++) {
+                switch (s[i]) {
+                    case ' ':
+                        break;
+                    case 'z':
+                        s[i] = 'a';
+                        break;
+                    case 'Z':
+                        s[i] = 'A';
+                        break;
+                    default:
+                        s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+                }
+
+                switch (s[i]) {
+                    case 'a': case 'e': case 'i': case 'o': case 'u':
+                        s[i] = s[i].toUpperCase();
+                }
+            }
+            return s.join('');
+        }
+
+        console.log(LetterChanges("PYTON"));
+        console.log(LetterChanges("OQIL"));
+        console.log(LetterChanges("AHmAD"));
+        console.log(LetterChanges("piter"));
+    </script>
+</body>
+
+</html>
