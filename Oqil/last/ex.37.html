@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 37</h2>
+        <img src="../image/javascript-basic-image-exercise-55.png" alt="">
+        <p> Write a JavaScript program to check whether a given string contains equal number of p's and t's.</p>
+
+        <button onclick="pt_Check()">Check it</button>
+        <input type="text" id="number" placeholder="Write any letter">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+        var number = document.getElementById('number');
+
+        function pt_Check() {
+            var p_num = number.value.replace(/[^p]/g, "");
+            var t_num = number.value.replace(/[^t]/g, "");
+
+            var p_res = p_num.length;
+            var t_res = t_num.length;
+
+            if (p_res === t_res) {
+                document.getElementById('demo').innerHTML = "It's equal number";
+            } else {
+                document.getElementById('demo').innerHTML = "It's not equal number";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

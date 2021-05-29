@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 33</h2>
+        <img src="../image/javascript-basic-image-exercise-51.png" alt="">
+        <p>Write a JavaScript program to convert a given number to hours and minutes.</p>
+
+            <button onclick="time_converter()">Check it</button>
+            <input type="text" id="number" placeholder="Write any number">
+            <span id="demo"></span>
+
+    </div>
+    <script>
+        function time_converter() {
+            var num = document.getElementById('number').value;
+            var hour = Math.floor(num / 60);
+            var minute = num % 60;
+            return document.getElementById('demo').innerHTML = hour + ":" + minute;
+        }
+
+
+    </script>
+</body>
+
+</html>

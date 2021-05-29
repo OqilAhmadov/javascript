@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 36</h2>
+        <img src="../image/javascript-basic-image-exercise-54.png" alt="">
+        <p> Write a JavaScript program to count the number of vowels in a given string.</p>
+
+            <button onclick="ab_Check()">Check it</button>
+            <input type="text" id="number" placeholder="Write any letter">
+            <span id="demo"></span>
+
+    </div>
+    <script>
+       function vowel_Count(str){
+           return str.replace(/[^aeiou]/g, "").length;
+       }
+
+       console.log(vowel_Count("alberit"));
+    
+
+    </script>
+</body>
+
+</html>

@@ -60,10 +60,17 @@ button{
     outline: none;
     background-color: floralwhite;
 }
+#number{
+  display: block;
+  margin: 0 auto 24px ;
+  padding: 12px 5px;
+}
 span {
   border: solid 1px red;
+  font-size: 22px;
   padding: 12px;
   max-width: 800px;
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
