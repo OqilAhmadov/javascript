@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 41</h2>
+        <img src="../image/javascript-basic-image-exercise-60.png" alt="">
+        <p> Write a JavaScript program to create a new string without the first and last character of a given string.</p>
+
+        <button onclick="first_end()">Check it</button>
+        <input type="text" id="str" placeholder="Write any letter">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var str = document.getElementById('str');
+    
+        function first_end() {
+        
+            document.getElementById('demo').innerHTML = str.value.substring(1, str.value.length -1);
+
+        }
+       
+    </script>
+</body>
+
+</html>

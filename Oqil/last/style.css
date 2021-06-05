@@ -74,3 +74,14 @@ span {
   margin: 0 auto;
   text-align: center;
 }
+
+#str{
+  display: block;
+  margin: 0 auto 24px ;
+  padding: 12px 5px;
+}
+.str{
+  display: block;
+  margin: 0 auto 24px ;
+  padding: 12px 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 48</h2>
+        <img src="../image/javascript-basic-image-exercise-69.png" alt="">
+        <p>Write a JavaScript program to create a new string taking the first and last n characters from a given string.
+            The string length must be greater or equal to n.</p>
+
+        <button onclick="sum_three()">Check it</button>
+        <input type="text" class="str" id="str2" placeholder="Write any number">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var nums = document.getElementById('str2');
+
+        function sum_three() {
+            nums.value.split(" ");
+
+            res = nums.value[0] + nums.value[1] + nums.value[2];
+            console.log(res);
+            document.getElementById('demo').innerHTML = res;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

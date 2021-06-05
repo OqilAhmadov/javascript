@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 42</h2>
+        <img src="../image/javascript-basic-image-exercise-61.png" alt="">
+        <p>Write a JavaScript program to concatenate two strings except their first character.</p>
+
+        <button onclick="concanate()">Check it</button>
+        <input type="text"class = "str" id="str1" placeholder="Write any letter">
+        <input type="text"class = "str" id="str2" placeholder="Write any letter">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var str1 = document.getElementById('str1');
+        var str2 = document.getElementById('str2');
+    
+        function concanate() {
+            str1.value = str1.value.substring(1, str1.value.length);
+            str2.value = str2.value.substring(1, str2.value.length);
+            
+            return document.getElementById('demo').innerHTML = str1.value + str2.value;
+        }
+       
+    </script>
+</body>
+
+</html>

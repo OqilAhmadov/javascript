@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 47</h2>
+        <img src="../image/javascript-basic-image-exercise-67.png" alt="">
+        <p> Write a JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.</p>
+
+        <button onclick="nop()">Check it</button>
+        <input type="text" class="str" id="str1" placeholder="Write any letter">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var str = document.getElementById('str1');
+
+       function nop() {
+           let start_pos = 0;
+           let end_pos = str.value.length;
+
+           if (str.value.length > 0 && str.value.charAt(0) == 'P') {
+               start_pos = 1;
+           }
+
+           if (str.value.length > 1 && str.value.charAt(str.value.length - 1) == 'P') {
+               end_pos--;
+           }
+
+            document.getElementById('demo').innerHTML = str.value.substring(start_pos, end_pos);
+       }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

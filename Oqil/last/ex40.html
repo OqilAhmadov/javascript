@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 39</h2>
+        <img src="../image/javascript-basic-image-exercise-59.png" alt="">
+        <p> Write a JavaScript program to extract the first half of a string of even length.</p>
+
+        <button onclick="first_half()">Check it</button>
+        <input type="text" id="str" placeholder="Write any letter">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        function first_half(str) {
+            if (str.length % 2 == 0) {
+                return str.slice(0, str.length / 2);
+            }
+            return str;
+        }
+        console.log(first_half("Python"));
+        console.log(first_half("JavaScript"));
+
+    </script>
+</body>
+
+</html>

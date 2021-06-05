@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 48</h2>
+        <img src="../image/javascript-basic-image-exercise-68.png" alt="">
+        <p>Write a JavaScript program to create a new string taking the first and last n characters from a given string. The string length must be greater or equal to n.</p>
+
+        <button onclick="two_string()">Check it</button>
+        <input type="text" class="str" id="str1" placeholder="Write any letter">
+        <input type="text" class="str" id="str2" placeholder="Write any number">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var str = document.getElementById('str1');
+        var n = document.getElementById('str2');
+
+       function two_string() {
+           first_part = str.value.substring(0, n.value);
+           last_part = str.value.substring(str.value.length - n.value);
+
+           document.getElementById('demo').innerHTML = first_part + last_part;
+       }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

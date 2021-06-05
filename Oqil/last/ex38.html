@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ex">
+        <h2>Exercise 38</h2>
+        <img src="../image/javascript-basic-image-exercise-57.png" alt="">
+        <p> Write a JavaScript program to create a new string of specified copies (positive number) of a given string.</p>
+
+        <button onclick="string_copies()">Check it</button>
+        <input type="text" id="str" placeholder="Write any letter">
+        <input type="text" id="number" placeholder="Write any number">
+        <span id="demo"></span>
+
+    </div>
+    <script>
+
+        var str = document.getElementById('str');
+        var num = document.getElementById('number');
+        
+        function string_copies() {
+            if (num.value < 0)
+                return false;
+
+            else 
+             string = str.value.repeat(num.value);
+    
+
+                document.getElementById('demo').innerHTML = string ;
+
+        }
+       
+    </script>
+</body>
+
+</html>
